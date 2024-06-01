@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, black, white);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #8e44ad, #ffffff, #ff0000);
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  background: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #333;
+}
+
+#visualizer {
+  width: 50%;
+  height: 400px;
+  background: linear-gradient(to bottom, #000, #fff);
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+#visualizer div {
+  height: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: height 0.1s ease-in-out;
+  background: linear-gradient(to bottom, #8e44ad, #000000, #ffffff, #ff0000);
+}
+
+#transcript {
+  font-size: 2rem;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  #transcript {
+    font-size: 1rem;
+  }
+}
